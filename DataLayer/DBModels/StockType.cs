@@ -9,6 +9,6 @@ namespace DataLayer.DBModels
     {
         [StringLength(50)]
         public string StockName { get; set; }
-        public int StockCount { get; set; }
+        public StockGroup StockGroup { get; set; }
     }
 }

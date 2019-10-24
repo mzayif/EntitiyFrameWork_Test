@@ -14,7 +14,8 @@ namespace DataLayer
         public virtual DbSet<Personel> Personel { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Department> Departman { get; set; }
-        public virtual DbSet<StockType> Stocks { get; set; }
+        public virtual DbSet<StockType> StockTypes { get; set; }
+        public virtual DbSet<StockGroup> StockGroups { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

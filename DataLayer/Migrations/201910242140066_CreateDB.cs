@@ -16,7 +16,7 @@ namespace DataLayer.Migrations
                         DepartmentType = c.Int(nullable: false),
                         CancelDate = c.DateTime(nullable: false),
                         CreateDate = c.DateTime(nullable: false),
-                        isActive = c.Boolean(nullable: false),
+                        Active = c.Boolean(nullable: false),
                         CancelUser_id = c.Int(),
                         CreateUser_id = c.Int(),
                     })
@@ -36,7 +36,7 @@ namespace DataLayer.Migrations
                         UserName = c.String(),
                         Password = c.String(),
                         CreateDate = c.DateTime(nullable: false),
-                        isActive = c.Boolean(nullable: false),
+                        Active = c.Boolean(nullable: false),
                         Personel_id = c.Int(),
                     })
                 .PrimaryKey(t => t.id)
@@ -55,7 +55,7 @@ namespace DataLayer.Migrations
                         Gender = c.Boolean(nullable: false),
                         Married = c.Boolean(nullable: false),
                         CreateDate = c.DateTime(nullable: false),
-                        isActive = c.Boolean(nullable: false),
+                        Active = c.Boolean(nullable: false),
                         Department_id = c.Int(),
                     })
                 .PrimaryKey(t => t.id)
@@ -71,7 +71,7 @@ namespace DataLayer.Migrations
                         StockCount = c.Int(nullable: false),
                         CancelDate = c.DateTime(nullable: false),
                         CreateDate = c.DateTime(nullable: false),
-                        isActive = c.Boolean(nullable: false),
+                        Active = c.Boolean(nullable: false),
                         CancelUser_id = c.Int(),
                         CreateUser_id = c.Int(),
                     })

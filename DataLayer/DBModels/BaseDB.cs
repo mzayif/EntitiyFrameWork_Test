@@ -12,12 +12,12 @@ namespace DataLayer.DBModels
 
         public int id { get; set; }
         public DateTime CreateDate { get; set; } 
-        public bool isActive { get; set; }
+        public bool Active { get; set; }
 
         public BaseDB()
         {
             CreateDate = DateTime.Now;
-            this.isActive = true;
+            this.Active = true;
         }
     }
 }

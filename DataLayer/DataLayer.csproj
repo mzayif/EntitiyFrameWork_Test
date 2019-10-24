@@ -57,12 +57,17 @@
     <Compile Include="DBModels\Department.cs" />
     <Compile Include="DBModels\LogDB\GelenLog.cs" />
     <Compile Include="DBModels\LogDB\GidenLog.cs" />
+    <Compile Include="DBModels\StockGroup.cs" />
     <Compile Include="DBModels\User.cs" />
     <Compile Include="Enums\DBConnStr.cs" />
     <Compile Include="DataModelLog.cs" />
-    <Compile Include="Migrations\201910242032382_CreateDB.cs" />
-    <Compile Include="Migrations\201910242032382_CreateDB.Designer.cs">
-      <DependentUpon>201910242032382_CreateDB.cs</DependentUpon>
+    <Compile Include="Migrations\201910242140066_CreateDB.cs" />
+    <Compile Include="Migrations\201910242140066_CreateDB.Designer.cs">
+      <DependentUpon>201910242140066_CreateDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910242151098_StockGroupTableAdd.cs" />
+    <Compile Include="Migrations\201910242151098_StockGroupTableAdd.Designer.cs">
+      <DependentUpon>201910242151098_StockGroupTableAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DBModels\Personel.cs" />
@@ -77,8 +82,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910242032382_CreateDB.resx">
-      <DependentUpon>201910242032382_CreateDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910242140066_CreateDB.resx">
+      <DependentUpon>201910242140066_CreateDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910242151098_StockGroupTableAdd.resx">
+      <DependentUpon>201910242151098_StockGroupTableAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
