@@ -7,16 +7,17 @@ namespace DataLayer.DBModels
     using System.Data.Entity.Spatial;
 
 
-    public partial class Departman:BaseDBModel
+    public partial class Department:BaseDBModel
     {
 
-        public Departman()
+        public Department()
         {
             Personel = new HashSet<Personel>();
         }
 
         [StringLength(50)]
-        public string Ad { get; set; }
+        public string DepartmentName { get; set; }
+        public int DepartmentType { get; set; }
 
         public virtual ICollection<Personel> Personel { get; set; }
     }

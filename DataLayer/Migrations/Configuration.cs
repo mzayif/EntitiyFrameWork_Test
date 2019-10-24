@@ -1,5 +1,6 @@
 namespace DataLayer.Migrations
 {
+    using DataLayer.DBModels;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -14,9 +15,12 @@ namespace DataLayer.Migrations
 
         protected override void Seed(DataLayer.DataModelStok context)
         {
-            context.Personel.AddOrUpdate(new DBModels.Personel { id = 1, Ad = "Muhammed", Soyad = "Zayif" });
+            var firstDepartment = new Department { id = 1, DepartmentName = "IT" };
+            context.Departman.AddOrUpdate(firstDepartment);
+            var person = new Personel { id = 1, Name = "Muhammed", Surname = "Zayif" ,Department= firstDepartment };
+            context.Personel.AddOrUpdate(person);
 
-            context.Users.AddOrUpdate(new DBModels.User { id = 1, Name = "Muhammed", Surename = "Zayif", UserName = "mz", Password = "123" });
+            context.Users.AddOrUpdate(new User { id = 1, Name = "Muhammed", Surename = "Zayif", UserName = "mz", Password = "123", Personel = person });
 
             //  This method will be called after migrating to the latest version.
 

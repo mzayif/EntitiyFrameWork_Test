@@ -9,13 +9,9 @@ namespace DataLayer.DBModels
 {
     public class BaseDB
     {
-        [Column(name: "ID")]
-        public int id { get; set; }
 
-        [Column(name: "CREATE_DATE")]
-        public DateTime CreateDate { get; set; }
-        
-        [Column(name: "ACTIVE")]
+        public int id { get; set; }
+        public DateTime CreateDate { get; set; } 
         public bool isActive { get; set; }
 
         public BaseDB()

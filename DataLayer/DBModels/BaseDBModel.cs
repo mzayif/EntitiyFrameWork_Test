@@ -9,13 +9,9 @@ namespace DataLayer.DBModels
 {
     public class BaseDBModel: BaseDB
     {    
-        [Column(name: "CREATE_USER")]
+
         public User CreateUser { get; set; }
-
-        [Column(name: "CANCEL_DATE")]
         public DateTime CancelDate { get; set; }
-
-        [Column(name: "CANCEL_USER")]
         public User CancelUser { get; set; }
        
 

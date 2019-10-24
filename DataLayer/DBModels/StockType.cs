@@ -5,10 +5,10 @@ namespace DataLayer.DBModels
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public class StokTipleri : BaseDBModel
+    public class StockType : BaseDBModel
     {
         [StringLength(50)]
-        public string StokAdi { get; set; }
-        public int StokAdeti { get; set; }
+        public string StockName { get; set; }
+        public int StockCount { get; set; }
     }
 }

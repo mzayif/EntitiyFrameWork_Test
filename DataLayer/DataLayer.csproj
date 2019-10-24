@@ -54,27 +54,15 @@
   <ItemGroup>
     <Compile Include="DBModels\BaseDB.cs" />
     <Compile Include="DBModels\BaseDBModel.cs" />
-    <Compile Include="DBModels\Departman.cs" />
+    <Compile Include="DBModels\Department.cs" />
     <Compile Include="DBModels\LogDB\GelenLog.cs" />
     <Compile Include="DBModels\LogDB\GidenLog.cs" />
     <Compile Include="DBModels\User.cs" />
     <Compile Include="Enums\DBConnStr.cs" />
     <Compile Include="DataModelLog.cs" />
-    <Compile Include="Migrations\201909300859080_CreateDB.cs" />
-    <Compile Include="Migrations\201909300859080_CreateDB.Designer.cs">
-      <DependentUpon>201909300859080_CreateDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201909300905308_UserDBUpdate.cs" />
-    <Compile Include="Migrations\201909300905308_UserDBUpdate.Designer.cs">
-      <DependentUpon>201909300905308_UserDBUpdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201909300910195_UserAndPersonforenKeyAdd.cs" />
-    <Compile Include="Migrations\201909300910195_UserAndPersonforenKeyAdd.Designer.cs">
-      <DependentUpon>201909300910195_UserAndPersonforenKeyAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201909301037447_CreateLogDB.cs" />
-    <Compile Include="Migrations\201909301037447_CreateLogDB.Designer.cs">
-      <DependentUpon>201909301037447_CreateLogDB.cs</DependentUpon>
+    <Compile Include="Migrations\201910242032382_CreateDB.cs" />
+    <Compile Include="Migrations\201910242032382_CreateDB.Designer.cs">
+      <DependentUpon>201910242032382_CreateDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DBModels\Personel.cs" />
@@ -82,24 +70,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataModelSetting.cs" />
     <Compile Include="DataModelStok.cs" />
-    <Compile Include="DBModels\StokTipleri.cs" />
+    <Compile Include="DBModels\StockType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201909300859080_CreateDB.resx">
-      <DependentUpon>201909300859080_CreateDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909300905308_UserDBUpdate.resx">
-      <DependentUpon>201909300905308_UserDBUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909300910195_UserAndPersonforenKeyAdd.resx">
-      <DependentUpon>201909300910195_UserAndPersonforenKeyAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909301037447_CreateLogDB.resx">
-      <DependentUpon>201909301037447_CreateLogDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910242032382_CreateDB.resx">
+      <DependentUpon>201910242032382_CreateDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,28 +9,22 @@ namespace DataLayer.DBModels
     public partial class Personel: BaseDB
     {
         [StringLength(50)]
-        public string Ad { get; set; }
-
+        public string Name { get; set; }
         [StringLength(50)]
-        public string Soyad { get; set; }
-
-        public short? Maas { get; set; }
-
+        public string Surname { get; set; }
+        public short? Salary { get; set; }
         [Column(TypeName = "smalldatetime")]
-        public DateTime? DogumTarihi { get; set; }
-
+        public DateTime? BirthDay { get; set; }
         public bool Gender { get; set; }
-
         public bool Married { get; set; }
-
-        public virtual Departman Departman { get; set; }
+        public virtual Department Department { get; set; }
 
         public Personel()
         {
-            Ad = "";
-            Soyad = "";
-            Maas = 0;
-            DogumTarihi = new DateTime(1900,1,1);
+            Name = "";
+            Surname = "";
+            Salary = 0;
+            BirthDay = new DateTime(1900,1,1);
             Gender = true;
             Married = false;            
         }
