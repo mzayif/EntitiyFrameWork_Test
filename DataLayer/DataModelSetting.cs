@@ -16,6 +16,7 @@ namespace DataLayer
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
         }
     }
 }
